@@ -448,7 +448,7 @@ abstract class Ardent extends Model {
 	 * @param  string  $id
 	 * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
 	 */
-	public function morphTo($name = null, $type = null, $id = null) {
+	/*public function morphTo($name = null, $type = null, $id = null) {
 		// If no name is provided, we will use the backtrace to get the function name
 		// since that is most likely the name of the polymorphic interface. We can
 		// use that to get both the class and foreign key that will be utilized.
@@ -468,7 +468,7 @@ abstract class Ardent extends Model {
 		$class = $this->$type;
 
 		return $this->belongsTo($class, $id);
-	}
+	}*/
 
     /**
      * Get an attribute from the model.
